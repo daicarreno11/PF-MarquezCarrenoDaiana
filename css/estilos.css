@@ -1,0 +1,976 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  object-fit: contain;
+}
+
+/* INDEX */
+/* HEADER */
+.birds {
+  background-image: url(../img/cloudsdos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.solo-index {
+  position: absolute;
+}
+
+.links {
+  color: rgb(65, 5, 5);
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 0.8rem;
+}
+
+.header {
+  background-color: rgba(42, 144, 185, 0.699);
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.header img {
+  width: 60px;
+  padding: 5px;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  color: rgb(230, 13, 42);
+  font-size: 1.8rem;
+  font-family: "Pacifico", sans-serif;
+}
+.header__nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__nav {
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    gap: 30px;
+  }
+  .header__nav {
+    font-size: 2rem;
+  }
+  .links {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 5px;
+  }
+  .header__title {
+    font-size: 3rem;
+  }
+  .header img {
+    width: 80px;
+  }
+  .links {
+    font-size: 1.2rem;
+  }
+}
+/* MAIN */
+/* HERO */
+.hero {
+  background-image: url(../img/people-traveling.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero__text {
+  border-radius: 20px;
+  margin-top: 60px;
+  padding: 10px;
+  background-color: rgba(21, 203, 216, 0.377);
+  text-align: center;
+  font-family: "Permanent Marker", sans-serif;
+  color: rgb(131, 7, 7);
+  font-size: 0.8rem;
+}
+.hero__button {
+  margin-top: 20px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: rgba(219, 216, 230, 0.788);
+  padding: 5px;
+  text-align: center;
+  font-family: "Permanent Marker", sans-serif;
+  color: rgb(138, 18, 102);
+  font-size: 0.8rem;
+  transition-duration: 2s;
+}
+.hero__button:hover {
+  background-color: rgb(135, 194, 25);
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero__text {
+    font-size: 1.1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .hero__button {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__text {
+    padding: 20px;
+    font-size: 1.4rem;
+  }
+  .hero__button {
+    width: 250px;
+    font-size: 1.4rem;
+  }
+}
+/*SECTION DESTINOS MAIN */
+.destinos {
+  grid-area: destinos;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  gap: 15px;
+  margin-top: 15px;
+}
+.destinos__title {
+  text-align: center;
+  font-family: "Permanent Marker", sans-serif;
+  color: rgb(230, 13, 42);
+  font-size: 1.3rem;
+}
+.destinos__paises {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.destinos__tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(7, 1, 1);
+  font-family: "Permanent Marker", sans-serif;
+}
+.destinos__tarjeta img {
+  width: 50px;
+}
+.destinos__tarjeta h3 {
+  font-size: 0.7rem;
+}
+.destinos__button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  color: rgb(243, 12, 12);
+  font-family: "Permanent Marker", sans-serif;
+  text-align: center;
+  font-size: 0.6rem;
+  background-color: rgba(219, 216, 230, 0.973);
+  width: 140px;
+  border-radius: 20px;
+  transition-duration: 2s;
+}
+.destinos__button:hover {
+  background-color: rgb(135, 194, 25);
+  transform: scale(1.2);
+}
+
+/* SECTION POR QUE MAIN */
+.porque {
+  grid-area: porque;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(250, 235, 215, 0.253);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.porque__title {
+  text-align: center;
+  font-family: "Permanent Marker", sans-serif;
+  color: rgb(230, 13, 42);
+  font-size: 1.1rem;
+}
+.porque__text {
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Permanent Marker", sans-serif;
+  color: rgb(7, 1, 1);
+  font-size: 0.7rem;
+}
+.porque__button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  color: rgb(243, 12, 12);
+  font-family: "Permanent Marker", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: rgba(219, 216, 230, 0.973);
+  width: 200px;
+  border-radius: 20px;
+  transition-duration: 2s;
+}
+.porque__button:hover {
+  background-color: rgb(135, 194, 25);
+  transform: scale(1.2);
+}
+
+/* SECTION REDES SOCIALES MAIN */
+.redes {
+  grid-area: redes;
+  margin: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slide-in-left 4s ease;
+}
+.redes__title {
+  font-family: "Permanent Marker", sans-serif;
+  color: rgb(230, 13, 42);
+  font-size: 1.3rem;
+}
+.redes__logos {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  font-family: "Permanent Marker", sans-serif;
+  color: rgb(7, 1, 1);
+  font-size: 0.8rem;
+}
+
+/* ANIMACIÓN SLIDE IN */
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ESTRUCTURA GRID */
+@media (min-width: 768px) {
+  .estructura {
+    display: grid;
+    width: 98vw;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "destinos porque" "redes porque";
+  }
+  .porque {
+    padding: 20px;
+  }
+  .porque__text {
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  .destinos__title {
+    font-size: 1.5rem;
+  }
+  .destinos__tarjeta {
+    font-size: 0.6rem;
+  }
+  .destinos__tarjeta img {
+    width: 70px;
+  }
+  .destinos__button {
+    font-size: 0.8rem;
+    width: 180px;
+  }
+  .destinos h3 {
+    font-size: 0.8rem;
+  }
+  .redes__title {
+    font-size: 1.5rem;
+  }
+  .redes__logos {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .porque__text {
+    font-size: 1.1rem;
+  }
+  .porque__title {
+    font-size: 1.2rem;
+  }
+  .porque__button {
+    font-size: 0.9rem;
+    width: 230px;
+  }
+  .destinos {
+    padding: 15px;
+  }
+  .destinos__title {
+    font-size: 1.8rem;
+  }
+  .destinos__tarjeta {
+    font-size: 0.9rem;
+  }
+  .destinos__tarjeta img {
+    width: 90px;
+  }
+  .destinos__button {
+    font-size: 1rem;
+    width: 230px;
+  }
+  .destinos h3 {
+    font-size: 1rem;
+  }
+  .redes__title {
+    font-size: 1.7rem;
+  }
+  .redes__logos {
+    font-size: 1.3rem;
+  }
+}
+/* FOOTER */
+.footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  width: 60px;
+  padding: 5px;
+}
+.footer__text {
+  font-family: "Permanent Marker", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5rem;
+  text-align: center;
+  color: rgb(7, 1, 1);
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer img {
+    width: 70px;
+  }
+  .footer__text {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 1200px) {
+  .footer img {
+    width: 85px;
+  }
+  .footer__text {
+    font-size: 0.9rem;
+  }
+}
+/* PAGINA DESTINOS */
+/* MAIN */
+.destinos-dos {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.destinos-dos__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Pacifico", sans-serif;
+  color: rgb(230, 13, 42);
+}
+.destinos-dos h3 {
+  background-color: rgba(245, 245, 220, 0.301);
+  color: rgb(7, 1, 1);
+  text-align: center;
+  font-family: "Permanent Marker", sans-serif;
+  border-radius: 50px;
+}
+.destinos-dos p {
+  background-color: rgba(40, 24, 148, 0.795);
+  margin: 15px;
+  padding: 15px;
+  color: rgb(7, 1, 1);
+  text-align: justify;
+  font-family: "Pacifico", sans-serif;
+  border-radius: 10px;
+}
+.destinos-dos__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 5px;
+  color: rgb(40, 24, 148);
+  font-family: "Permanent Marker", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgba(219, 216, 230, 0.973);
+  width: 250px;
+  border-radius: 20px;
+  transition-duration: 2s;
+}
+.destinos-dos__button:hover {
+  background-color: rgb(135, 194, 25);
+  transform: scale(1.2);
+}
+
+.francia {
+  background-image: url(../img/Paris.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.holanda {
+  background-image: url(../img/Amsterdam.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.estadosunidos {
+  background-image: url(../img/New\ york.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.espana {
+  background-image: url(../img/madrid.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.inglaterra {
+  background-image: url(../img/Londres.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.alemania {
+  background-image: url(../img/berlin.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.irlanda {
+  background-image: url(../img/dublin.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.japon {
+  background-image: url(../img/tokyo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.portugal {
+  background-image: url(../img/lisboa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.suecia {
+  background-image: url(../img/estocolmo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.mexico {
+  background-image: url(../img/ciudaddemexico.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.australia {
+  background-image: url(../img/sydney.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .destinos-dos__title {
+    font-size: 2.5rem;
+  }
+  .destinos-dos__button {
+    font-size: 1.2rem;
+    width: 300px;
+    margin-top: 50px;
+  }
+  .espana p {
+    margin-top: 30px;
+  }
+  .inglaterra p {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .destinos-dos__title {
+    font-size: 3.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .destinos-dos p {
+    font-size: 1.2rem;
+  }
+  .destinos-dos__button {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-size: 2rem;
+    width: 450px;
+  }
+  .espana p {
+    margin-top: 40px;
+  }
+  .inglaterra p {
+    margin-top: 40px;
+  }
+  .portugal p {
+    margin-top: 40px;
+  }
+  .suecia p {
+    margin-top: 30px;
+  }
+}
+/* PAGINA EXPERIENCIAS */
+/* MAIN */
+.experiencias {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.experiencias__title {
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  color: rgb(230, 13, 42);
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.experiencias__caja {
+  border-radius: 60px;
+  background-color: rgba(153, 146, 146, 0.24);
+  margin-bottom: 30px;
+}
+.experiencias img {
+  border-radius: 20px;
+}
+.experiencias h3 {
+  text-align: center;
+  font-family: "Permanent Marker", sans-serif;
+  color: rgb(7, 1, 1);
+}
+.experiencias p {
+  text-align: justify;
+  font-family: "Permanent Marker", sans-serif;
+  color: rgb(7, 1, 1);
+}
+.experiencias__enlace {
+  text-align: center;
+  color: rgb(240, 100, 6);
+  font-family: "Permanent Marker", sans-serif;
+}
+.experiencias__button {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  color: rgb(228, 106, 25);
+  font-family: "Permanent Marker", sans-serif;
+  text-align: center;
+  font-size: 1rem;
+  background-color: rgba(219, 216, 230, 0.973);
+  width: 250px;
+  border-radius: 20px;
+  transition-duration: 2s;
+}
+.experiencias__button:hover {
+  background-color: rgb(117, 233, 8);
+  transform: scale(1.2);
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .experiencias__title {
+    font-size: 2.5rem;
+  }
+  .experiencias__button {
+    font-size: 1.5;
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .experiencias__title {
+    font-size: 3.5rem;
+  }
+  .experiencias__button {
+    font-size: 2rem;
+    width: 450px;
+  }
+}
+/* PAGINA PRECIOS */
+/* MAIN */
+/* TABLA PRECIOS */
+.precios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+.precios__table {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 0.8rem;
+  color: rgb(7, 1, 1);
+  width: 90vw;
+  border: 5px solid black;
+  padding: 2px;
+  border-radius: 10px;
+  /* Gradiente */
+  background: rgb(33, 187, 193);
+  background: linear-gradient(to top, rgb(33, 187, 193) 9%, rgb(18, 33, 230) 21%, rgb(37, 20, 136) 34%, rgb(16, 10, 97) 48%, rgb(25, 86, 170) 60%, rgb(30, 132, 213) 72%, rgb(9, 78, 187) 82%, rgb(29, 9, 187) 91%);
+}
+.precios__title {
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  color: rgb(230, 13, 42);
+  font-size: 2rem;
+}
+.precios__button {
+  padding: 5px;
+  color: rgb(243, 12, 12);
+  font-family: "Permanent Marker", sans-serif;
+  text-align: center;
+  font-size: 0.7rem;
+  background-color: rgba(219, 216, 230, 0.973);
+  width: 120px;
+  border-radius: 20px;
+  transition-duration: 2s;
+}
+.precios__button:hover {
+  background-color: rgb(135, 194, 25);
+  transform: scale(1.2);
+}
+
+/* PREGUNTAS */
+.preguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 30px;
+}
+.preguntas__caja {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+.preguntas__contenedor {
+  width: 90%;
+  background-color: rgba(178, 174, 216, 0.329);
+  border-radius: 10px;
+  padding: 5px;
+}
+.preguntas__title {
+  font-family: "Pacifico", sans-serif;
+  color: rgb(230, 13, 42);
+  font-size: 2rem;
+}
+.preguntas h3 {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.preguntas p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .precios__table {
+    width: 80vw;
+    font-size: 1rem;
+    height: 40vh;
+  }
+  .precios__title {
+    font-size: 2.5rem;
+  }
+  .precios__button {
+    font-size: 0.9rem;
+    width: 180px;
+  }
+  .preguntas__title {
+    font-size: 2.5rem;
+  }
+  .preguntas__caja {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+  }
+  .preguntas h3 {
+    font-size: 1rem;
+  }
+  .preguntas p {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .main-precios {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+  .precios {
+    gap: 30px;
+  }
+  .precios__table {
+    width: 75%;
+    height: 50vh;
+  }
+  .precios__title {
+    font-size: 3.5rem;
+  }
+  .precios__button {
+    font-size: 1.2rem;
+    width: 220px;
+  }
+  .preguntas {
+    border: solid rgba(0, 0, 0, 0.445) 2px;
+  }
+  .preguntas__title {
+    font-size: 2.2rem;
+  }
+  .preguntas h3 {
+    font-size: 0.9rem;
+  }
+}
+/* PAGINA CONTACTO */
+/* MAIN */
+/* FORMULARIO */
+.formulario {
+  grid-area: formulario;
+  margin-top: 20px;
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+.formulario p {
+  margin-bottom: 15px;
+  font-size: 0.7rem;
+}
+.formulario__title {
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  color: rgb(230, 13, 42);
+  font-size: 2rem;
+}
+.formulario__caja {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formulario__button {
+  text-align: center;
+  padding: 5px;
+  color: rgb(17, 16, 16);
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 0.7rem;
+  background-color: rgba(219, 216, 230, 0.973);
+  width: 120px;
+  border-radius: 20px;
+}
+
+/* QUIENES SOMOS */
+.somos {
+  grid-area: somos;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.somos__title {
+  font-family: "Pacifico", sans-serif;
+  color: rgb(230, 13, 42);
+  font-size: 1.4rem;
+}
+.somos p {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 0.8rem;
+  text-align: justify;
+  padding: 10px;
+}
+
+/* REDES SOCIALES */
+.sociales {
+  grid-area: sociales;
+}
+.sociales__caja {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+.sociales i {
+  font-family: "Pacifico", sans-serif;
+}
+.sociales__title {
+  text-align: center;
+  font-family: "Pacifico", sans-serif;
+  color: rgb(230, 13, 42);
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "formulario somos" "formulario sociales";
+    align-items: baseline;
+    padding: 5px;
+  }
+  .formulario {
+    font-size: 0.9rem;
+  }
+  .formulario__title {
+    font-size: tamano-titulo-md;
+  }
+  .formulario p {
+    font-size: 0.8rem;
+  }
+  .somos {
+    background-color: rgba(178, 174, 216, 0.493);
+    border-radius: 20px;
+  }
+  .somos__title {
+    font-size: 1.6rem;
+  }
+  .sociales {
+    background-color: rgba(178, 174, 216, 0.493);
+    border-radius: 80px;
+  }
+  .sociales__title {
+    font-size: 1.6rem;
+  }
+  .sociales__caja {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .formulario {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  .formulario__title {
+    font-size: 3.5rem;
+  }
+  .formulario p {
+    font-size: 1rem;
+  }
+  .somos__title {
+    font-size: 2rem;
+  }
+  .somos p {
+    font-size: 1rem;
+  }
+  .sociales__title {
+    font-size: 2rem;
+  }
+  .sociales__caja {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
