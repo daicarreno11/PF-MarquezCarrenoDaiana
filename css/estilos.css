@@ -17,6 +17,313 @@ img {
   object-fit: contain;
 }
 
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__nav {
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    gap: 30px;
+  }
+  .header__nav {
+    font-size: 2rem;
+  }
+  .links {
+    font-size: 0.9rem;
+  }
+  .hero__text {
+    font-size: 1.1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .hero__button {
+    font-size: 1.1rem;
+  }
+  .estructura {
+    display: grid;
+    width: 98vw;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "destinos porque" "redes porque";
+  }
+  .porque {
+    padding: 20px;
+  }
+  .porque__text {
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  .destinos__title {
+    font-size: 1.5rem;
+  }
+  .destinos__tarjeta {
+    font-size: 0.6rem;
+  }
+  .destinos__tarjeta img {
+    width: 70px;
+  }
+  .destinos__button {
+    font-size: 0.8rem;
+    width: 180px;
+  }
+  .destinos h3 {
+    font-size: 0.8rem;
+  }
+  .redes__title {
+    font-size: 1.5rem;
+  }
+  .redes__logos {
+    font-size: 1.1rem;
+  }
+  .footer img {
+    width: 70px;
+  }
+  .footer__text {
+    font-size: 0.8rem;
+  }
+  .destinos-dos__title {
+    font-size: 2.5rem;
+  }
+  .destinos-dos__button {
+    font-size: 1.2rem;
+    width: 300px;
+    margin-top: 50px;
+  }
+  .espana p {
+    margin-top: 30px;
+  }
+  .inglaterra p {
+    margin-top: 30px;
+  }
+  .experiencias__title {
+    font-size: 2.5rem;
+  }
+  .experiencias__button {
+    font-size: 1.5;
+    width: 300px;
+  }
+  .precios__table {
+    width: 80vw;
+    font-size: 1rem;
+    height: 40vh;
+  }
+  .precios__title {
+    font-size: 2.5rem;
+  }
+  .precios__button {
+    font-size: 0.9rem;
+    width: 180px;
+  }
+  .preguntas__title {
+    font-size: 2.5rem;
+  }
+  .preguntas__caja {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+  }
+  .preguntas h3 {
+    font-size: 1rem;
+  }
+  .preguntas p {
+    font-size: 0.8rem;
+  }
+  .main-contacto {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "formulario somos" "formulario sociales";
+    align-items: baseline;
+    padding: 5px;
+  }
+  .formulario {
+    font-size: 0.9rem;
+  }
+  .formulario__title {
+    font-size: tamano-titulo-md;
+  }
+  .formulario p {
+    font-size: 0.8rem;
+  }
+  .somos {
+    background-color: rgba(178, 174, 216, 0.493);
+    border-radius: 20px;
+  }
+  .somos__title {
+    font-size: 1.6rem;
+  }
+  .sociales {
+    background-color: rgba(178, 174, 216, 0.493);
+    border-radius: 80px;
+  }
+  .sociales__title {
+    font-size: 1.6rem;
+  }
+  .sociales__caja {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 5px;
+  }
+  .header__title {
+    font-size: 3rem;
+  }
+  .header img {
+    width: 80px;
+  }
+  .links {
+    font-size: 1.2rem;
+  }
+  .hero__text {
+    padding: 20px;
+    font-size: 1.4rem;
+  }
+  .hero__button {
+    width: 250px;
+    font-size: 1.4rem;
+  }
+  .porque__text {
+    font-size: 1.1rem;
+  }
+  .porque__title {
+    font-size: 1.2rem;
+  }
+  .porque__button {
+    font-size: 0.9rem;
+    width: 230px;
+  }
+  .destinos {
+    padding: 15px;
+  }
+  .destinos__title {
+    font-size: 1.8rem;
+  }
+  .destinos__tarjeta {
+    font-size: 0.9rem;
+  }
+  .destinos__tarjeta img {
+    width: 90px;
+  }
+  .destinos__button {
+    font-size: 1rem;
+    width: 230px;
+  }
+  .destinos h3 {
+    font-size: 1rem;
+  }
+  .redes__title {
+    font-size: 1.7rem;
+  }
+  .redes__logos {
+    font-size: 1.3rem;
+  }
+  .footer img {
+    width: 85px;
+  }
+  .footer__text {
+    font-size: 1rem;
+  }
+  .destinos-dos__title {
+    font-size: 3.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .destinos-dos p {
+    font-size: 1.2rem;
+  }
+  .destinos-dos__button {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-size: 2rem;
+    width: 450px;
+  }
+  .espana p {
+    margin-top: 40px;
+  }
+  .inglaterra p {
+    margin-top: 40px;
+  }
+  .portugal p {
+    margin-top: 40px;
+  }
+  .suecia p {
+    margin-top: 30px;
+  }
+  .experiencias__title {
+    font-size: 3.5rem;
+  }
+  .experiencias__button {
+    font-size: 2rem;
+    width: 450px;
+  }
+  .main-precios {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+  .precios {
+    gap: 30px;
+  }
+  .precios__table {
+    width: 75%;
+    height: 50vh;
+  }
+  .precios__title {
+    font-size: 3.5rem;
+  }
+  .precios__button {
+    font-size: 1.2rem;
+    width: 220px;
+  }
+  .preguntas {
+    border: solid rgba(0, 0, 0, 0.445) 2px;
+  }
+  .preguntas__title {
+    font-size: 2.2rem;
+  }
+  .preguntas h3 {
+    font-size: 0.9rem;
+  }
+  .formulario {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  .formulario__title {
+    font-size: 3.5rem;
+  }
+  .formulario p {
+    font-size: 1rem;
+  }
+  .somos__title {
+    font-size: 2rem;
+  }
+  .somos p {
+    font-size: 1rem;
+  }
+  .sociales__title {
+    font-size: 2rem;
+  }
+  .sociales__caja {
+    font-size: 1.2rem;
+  }
+}
 /* INDEX */
 /* HEADER */
 .birds {
@@ -39,7 +346,7 @@ img {
   background-color: rgba(42, 144, 185, 0.699);
   width: 100%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
 }
 .header img {
   width: 60px;
@@ -63,42 +370,6 @@ img {
   padding: 10px;
 }
 
-@media (min-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header__nav {
-    margin-left: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
-    gap: 30px;
-  }
-  .header__nav {
-    font-size: 2rem;
-  }
-  .links {
-    font-size: 0.9rem;
-  }
-}
-@media (min-width: 1200px) {
-  .header {
-    padding: 5px;
-  }
-  .header__title {
-    font-size: 3rem;
-  }
-  .header img {
-    width: 80px;
-  }
-  .links {
-    font-size: 1.2rem;
-  }
-}
 /* MAIN */
 /* HERO */
 .hero {
@@ -109,8 +380,8 @@ img {
   height: 98vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .hero__text {
   border-radius: 20px;
@@ -139,31 +410,11 @@ img {
   transform: scale(1.1);
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .hero__text {
-    font-size: 1.1rem;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .hero__button {
-    font-size: 1.1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .hero__text {
-    padding: 20px;
-    font-size: 1.4rem;
-  }
-  .hero__button {
-    width: 250px;
-    font-size: 1.4rem;
-  }
-}
 /*SECTION DESTINOS MAIN */
 .destinos {
   grid-area: destinos;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   padding: 5px;
   gap: 15px;
   margin-top: 15px;
@@ -309,125 +560,34 @@ img {
     opacity: 1;
   }
 }
-/* ESTRUCTURA GRID */
-@media (min-width: 768px) {
-  .estructura {
-    display: grid;
-    width: 98vw;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "destinos porque" "redes porque";
-  }
-  .porque {
-    padding: 20px;
-  }
-  .porque__text {
-    text-align: justify;
-    font-size: 0.9rem;
-    line-height: 1.7;
-  }
-  .destinos__title {
-    font-size: 1.5rem;
-  }
-  .destinos__tarjeta {
-    font-size: 0.6rem;
-  }
-  .destinos__tarjeta img {
-    width: 70px;
-  }
-  .destinos__button {
-    font-size: 0.8rem;
-    width: 180px;
-  }
-  .destinos h3 {
-    font-size: 0.8rem;
-  }
-  .redes__title {
-    font-size: 1.5rem;
-  }
-  .redes__logos {
-    font-size: 1.1rem;
-  }
-}
-@media (min-width: 1200px) {
-  .porque__text {
-    font-size: 1.1rem;
-  }
-  .porque__title {
-    font-size: 1.2rem;
-  }
-  .porque__button {
-    font-size: 0.9rem;
-    width: 230px;
-  }
-  .destinos {
-    padding: 15px;
-  }
-  .destinos__title {
-    font-size: 1.8rem;
-  }
-  .destinos__tarjeta {
-    font-size: 0.9rem;
-  }
-  .destinos__tarjeta img {
-    width: 90px;
-  }
-  .destinos__button {
-    font-size: 1rem;
-    width: 230px;
-  }
-  .destinos h3 {
-    font-size: 1rem;
-  }
-  .redes__title {
-    font-size: 1.7rem;
-  }
-  .redes__logos {
-    font-size: 1.3rem;
-  }
-}
 /* FOOTER */
 .footer {
-  margin-top: 20px;
+  background-color: rgb(230, 13, 42);
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 15px;
 }
 .footer img {
   width: 60px;
   padding: 5px;
 }
+.footer h5 {
+  font-size: 0.9rem;
+}
 .footer__text {
   font-family: "Permanent Marker", sans-serif;
-  display: flex;
-  flex-direction: column;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   text-align: center;
   color: rgb(7, 1, 1);
 }
-.footer ul {
+.footer__contenedor {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
 }
 
-@media (min-width: 768px) {
-  .footer img {
-    width: 70px;
-  }
-  .footer__text {
-    font-size: 0.7rem;
-  }
-}
-@media (min-width: 1200px) {
-  .footer img {
-    width: 85px;
-  }
-  .footer__text {
-    font-size: 0.9rem;
-  }
-}
 /* PAGINA DESTINOS */
 /* MAIN */
 .destinos-dos {
@@ -442,18 +602,18 @@ img {
   color: rgb(230, 13, 42);
 }
 .destinos-dos h3 {
-  background-color: rgba(245, 245, 220, 0.301);
+  background-color: rgba(245, 245, 220, 0.349);
   color: rgb(7, 1, 1);
   text-align: center;
   font-family: "Permanent Marker", sans-serif;
   border-radius: 50px;
 }
 .destinos-dos p {
-  background-color: rgba(40, 24, 148, 0.795);
+  background-color: rgba(142, 133, 196, 0.836);
   margin: 15px;
   padding: 15px;
   color: rgb(7, 1, 1);
-  text-align: justify;
+  text-align: center;
   font-family: "Pacifico", sans-serif;
   border-radius: 10px;
 }
@@ -573,50 +733,6 @@ img {
   border-radius: 10px;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .destinos-dos__title {
-    font-size: 2.5rem;
-  }
-  .destinos-dos__button {
-    font-size: 1.2rem;
-    width: 300px;
-    margin-top: 50px;
-  }
-  .espana p {
-    margin-top: 30px;
-  }
-  .inglaterra p {
-    margin-top: 30px;
-  }
-}
-@media (min-width: 1200px) {
-  .destinos-dos__title {
-    font-size: 3.5rem;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  .destinos-dos p {
-    font-size: 1.2rem;
-  }
-  .destinos-dos__button {
-    margin-top: 80px;
-    margin-bottom: 60px;
-    font-size: 2rem;
-    width: 450px;
-  }
-  .espana p {
-    margin-top: 40px;
-  }
-  .inglaterra p {
-    margin-top: 40px;
-  }
-  .portugal p {
-    margin-top: 40px;
-  }
-  .suecia p {
-    margin-top: 30px;
-  }
-}
 /* PAGINA EXPERIENCIAS */
 /* MAIN */
 .experiencias {
@@ -671,24 +787,6 @@ img {
   transform: scale(1.2);
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .experiencias__title {
-    font-size: 2.5rem;
-  }
-  .experiencias__button {
-    font-size: 1.5;
-    width: 300px;
-  }
-}
-@media (min-width: 1200px) {
-  .experiencias__title {
-    font-size: 3.5rem;
-  }
-  .experiencias__button {
-    font-size: 2rem;
-    width: 450px;
-  }
-}
 /* PAGINA PRECIOS */
 /* MAIN */
 /* TABLA PRECIOS */
@@ -771,68 +869,6 @@ img {
   font-size: 0.7rem;
 }
 
-@media (min-width: 768px) {
-  .precios__table {
-    width: 80vw;
-    font-size: 1rem;
-    height: 40vh;
-  }
-  .precios__title {
-    font-size: 2.5rem;
-  }
-  .precios__button {
-    font-size: 0.9rem;
-    width: 180px;
-  }
-  .preguntas__title {
-    font-size: 2.5rem;
-  }
-  .preguntas__caja {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: repeat(3, auto);
-    justify-content: center;
-    align-items: baseline;
-    gap: 15px;
-  }
-  .preguntas h3 {
-    font-size: 1rem;
-  }
-  .preguntas p {
-    font-size: 0.8rem;
-  }
-}
-@media (min-width: 1200px) {
-  .main-precios {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: auto;
-    align-items: center;
-  }
-  .precios {
-    gap: 30px;
-  }
-  .precios__table {
-    width: 75%;
-    height: 50vh;
-  }
-  .precios__title {
-    font-size: 3.5rem;
-  }
-  .precios__button {
-    font-size: 1.2rem;
-    width: 220px;
-  }
-  .preguntas {
-    border: solid rgba(0, 0, 0, 0.445) 2px;
-  }
-  .preguntas__title {
-    font-size: 2.2rem;
-  }
-  .preguntas h3 {
-    font-size: 0.9rem;
-  }
-}
 /* PAGINA CONTACTO */
 /* MAIN */
 /* FORMULARIO */
@@ -907,70 +943,6 @@ img {
   font-family: "Pacifico", sans-serif;
   color: rgb(230, 13, 42);
   font-size: 1.4rem;
-}
-
-@media (min-width: 768px) {
-  .main-contacto {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: auto auto;
-    grid-template-areas: "formulario somos" "formulario sociales";
-    align-items: baseline;
-    padding: 5px;
-  }
-  .formulario {
-    font-size: 0.9rem;
-  }
-  .formulario__title {
-    font-size: tamano-titulo-md;
-  }
-  .formulario p {
-    font-size: 0.8rem;
-  }
-  .somos {
-    background-color: rgba(178, 174, 216, 0.493);
-    border-radius: 20px;
-  }
-  .somos__title {
-    font-size: 1.6rem;
-  }
-  .sociales {
-    background-color: rgba(178, 174, 216, 0.493);
-    border-radius: 80px;
-  }
-  .sociales__title {
-    font-size: 1.6rem;
-  }
-  .sociales__caja {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.9rem;
-  }
-}
-@media (min-width: 1200px) {
-  .formulario {
-    font-size: 1.1rem;
-    padding: 10px;
-  }
-  .formulario__title {
-    font-size: 3.5rem;
-  }
-  .formulario p {
-    font-size: 1rem;
-  }
-  .somos__title {
-    font-size: 2rem;
-  }
-  .somos p {
-    font-size: 1rem;
-  }
-  .sociales__title {
-    font-size: 2rem;
-  }
-  .sociales__caja {
-    font-size: 1.2rem;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
