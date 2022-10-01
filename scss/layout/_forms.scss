@@ -1,0 +1,33 @@
+
+/* FORMULARIO */
+.formulario{
+    grid-area: formulario;
+    margin-top: 20px;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 0.8rem;
+    padding: 5px;
+    p{
+        margin-bottom: 15px;
+        font-size: 0.7rem;
+    }
+    &__title{
+        text-align: center;
+        font-family: 'Pacifico', sans-serif;
+        color: $color-principal;
+        font-size: 1.5rem;
+    }
+    &__caja{
+        @include flex-column();
+        gap: 10px;
+    }
+    &__button{
+        text-align: center;
+        padding: 5px;
+        color: rgb(17, 16, 16);
+        font-family: 'Permanent Marker', sans-serif;
+        font-size: 0.7rem;
+        background-color: rgba(219, 216, 230, 0.973);
+        width: 120px;
+        border-radius: 20px;
+    }
+}

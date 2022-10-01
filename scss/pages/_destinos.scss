@@ -1,0 +1,131 @@
+
+.destinos-dos{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    &__title{
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: $tamano-titulo;
+        font-family: 'Pacifico', sans-serif;
+        color: $color-principal;
+    }
+    h3{
+        background-color: rgba(245, 245, 220, 0.349);
+        color: $color-texto;
+        text-align: center;
+        font-family: 'Permanent Marker', sans-serif;
+        border-radius: 50px;
+    }
+    p{
+        background-color: rgba(142, 133, 196, 0.836);
+        margin: 15px;
+        padding: 15px;
+        color: $color-texto;
+        text-align: center;
+        font-family: 'Pacifico', sans-serif;
+        border-radius: 10px;
+    }
+    &__button{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        padding: 5px;
+        color: rgb(40, 24, 148);
+        font-family: 'Permanent Marker', sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        background-color: rgba(219, 216, 230, 0.973);
+        width: 250px;
+        border-radius: 20px;
+        transition-duration: 2s;
+        &:hover{
+            background-color: rgb(135, 194, 25);
+            transform: scale(1.2);
+        }
+    }
+}
+.francia{
+    background-image: url(../img/Paris.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.holanda{
+    background-image: url(../img/Amsterdam.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.estadosunidos{
+    background-image: url(../img/New\ york.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.espana{
+    background-image: url(../img/madrid.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.inglaterra{
+    background-image: url(../img/Londres.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding-bottom: 30px;  
+}
+.alemania{
+    background-image: url(../img/berlin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.irlanda{
+    background-image: url(../img/dublin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.japon{
+    background-image: url(../img/tokyo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.portugal{
+    background-image: url(../img/lisboa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.suecia{
+    background-image: url(../img/estocolmo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.mexico{
+    background-image: url(../img/ciudaddemexico.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.australia{
+    background-image: url(../img/sydney.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}

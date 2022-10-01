@@ -1,0 +1,24 @@
+/* FOOTER */
+
+.footer{
+    background-color: $color-principal;
+    margin-top: 10px;
+    @include flex-column();
+    gap: 15px;
+    img{
+        width: 60px;
+        padding: 5px;
+    }
+    h5{
+        font-size: 0.9rem;
+    }
+    &__text{
+        font-family: 'Permanent Marker', sans-serif;
+        font-size: 0.7rem;
+        text-align: center;
+        color: $color-texto;
+    }
+    &__contenedor{
+        @include flexbox()
+    }
+}

@@ -1,0 +1,76 @@
+/* TABLA PRECIOS */
+.precios{
+    @include flex-column();
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    &__table{
+        font-family: 'Permanent Marker', sans-serif;
+        font-size: 0.8rem;
+        color: $color-texto;
+        width: 90vw;
+        border: 5px solid black;
+        padding: 2px;
+        border-radius: 10px;
+            /* Gradiente */
+        background: rgb(33,187,193);
+        background: linear-gradient(to top, rgba(33,187,193,1) 9%, rgba(18,33,230,1) 21%, rgba(37,20,136,1) 34%, rgba(16,10,97,1) 48%, rgba(25,86,170,1) 60%, rgba(30,132,213,1) 72%, rgba(9,78,187,1) 82%, rgba(29,9,187,1) 91%);
+    }
+    &__title{
+        text-align: center;
+        font-family: 'Pacifico', sans-serif;
+        color: $color-principal;
+        font-size: $tamano-titulo;
+    }
+    &__button{
+        padding: 5px;
+        color: rgb(243, 12, 12);
+        font-family: 'Permanent Marker', sans-serif;
+        text-align: center;
+        font-size: 0.7rem;
+        background-color: rgba(219, 216, 230, 0.973);
+        width: 120px;
+        border-radius: 20px;
+        transition-duration: 2s;
+        &:hover{
+            background-color: rgb(135, 194, 25);
+            transform: scale(1.2);
+        }
+    }
+}
+/* PREGUNTAS */
+.preguntas{
+    @include flex-column();
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;
+    &__caja{
+        font-family: 'Permanent Marker', sans-serif;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    &__contenedor{
+        width: 90%;
+        background-color: rgba(178, 174, 216, 0.329);
+        border-radius: 10px;
+        padding: 5px;
+    }
+    &__title{
+        font-family: 'Pacifico', sans-serif;
+        color: $color-principal;
+        font-size: $tamano-titulo;
+    }
+    h3{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    p{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+}

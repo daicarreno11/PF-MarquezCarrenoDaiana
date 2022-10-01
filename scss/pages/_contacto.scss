@@ -1,0 +1,37 @@
+/* QUIENES SOMOS */
+.somos{
+    grid-area: somos;
+    @include flex-column();
+    align-items: center;
+    margin: 10px;
+    &__title{
+        font-family: 'Pacifico', sans-serif;
+        color: $color-principal;
+        font-size: 1.4rem;
+    }
+    p{
+        font-family: 'Permanent Marker', sans-serif;
+        font-size: 0.8rem;
+        text-align: justify;
+        padding: 10px;
+    }
+}
+/* REDES SOCIALES */
+.sociales{
+    grid-area: sociales;
+    &__caja{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+    i{
+        font-family: 'Pacifico', sans-serif;
+    }
+    &__title{
+        text-align: center;
+        font-family: 'Pacifico', sans-serif;
+        color: $color-principal;
+        font-size: 1.4rem;
+    }
+}
