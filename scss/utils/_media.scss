@@ -1,0 +1,355 @@
+@media(min-width: 768px){
+    .header{
+        @include flexbox(row, space-between, center);
+        &__nav{
+            margin-left: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 50%;
+            gap: 30px;
+        }
+        &__nav{
+            font-size: 2rem;
+        }
+    }
+    .links{
+        font-size: 0.9rem;
+    }
+    .hero{
+        &__text{
+            font-size: 1.1rem;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        &__button{
+            font-size: 1.1rem;
+        }
+    }
+
+    .estructura{
+        display: grid;
+        width: 98vw; 
+
+        grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "destinos porque"
+        "redes porque";
+    }
+    .porque{
+        padding: 20px;
+        &__text{
+            text-align: justify;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+    }
+    .destinos{
+        &__title{
+            font-size: 1.5rem;
+        }
+        &__tarjeta{
+            font-size: 0.6rem;
+            img{
+                width: 70px;
+            }
+        }
+        &__button{
+            font-size: 0.8rem;
+            width: 180px;
+        }
+        h3{
+            font-size: 0.8rem;
+        }
+    }
+    .redes{
+        &__title{
+            font-size: 1.5rem;
+        }
+        &__logos{
+            font-size: 1.1rem;
+        }
+    }
+
+    .footer{
+        img{
+            width: 70px;
+        }
+        &__text{
+            font-size: 0.8rem;
+        }
+    }
+
+    .destinos-dos{
+        &__title{
+            font-size: $tamano-titulo-md;
+        }
+        &__button{
+            font-size: 1.2rem;
+            width: 300px;
+            margin-top: 50px;
+        }
+    }
+    .espana p{
+        margin-top: 30px;
+    }
+    .inglaterra p{
+        margin-top: 30px;
+    }
+
+    .experiencias{
+        &__title{
+            font-size: $tamano-titulo-md;
+        }
+        &__button{
+            font-size: 1.5;
+            width: 300px;
+        }
+    }
+
+    .precios{
+        &__table{
+            width: 80vw;
+            font-size: 1rem;
+            height: 40vh;
+        }
+        &__title{
+            font-size: $tamano-titulo-md;
+        }
+        &__button{
+            font-size: 0.9rem;
+            width: 180px;
+        }
+    }
+    .preguntas{
+        &__title{
+            font-size: $tamano-titulo-md;
+        }
+        &__caja{
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: repeat(3, auto);
+            justify-content: center;
+            align-items: baseline;
+            gap: 15px;
+        }
+        h3{
+            font-size: 1rem; 
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+
+    .main-contacto{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "formulario somos"
+        "formulario sociales";
+        align-items: baseline;
+        padding: 5px;
+    }
+    .formulario{
+        font-size: 0.9rem;
+        &__title{
+            font-size: tamano-titulo-md;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+    }
+    .somos{
+        background-color: rgba(178, 174, 216, 0.493);
+        border-radius: 20px;
+        &__title{
+            font-size: 1.6rem;
+        }
+    }
+    .sociales{
+        background-color: rgba(178, 174, 216, 0.493);
+        border-radius: 80px;
+        &__title{
+            font-size: 1.6rem
+        }
+        &__caja{
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+
+@media(min-width: 1200px){
+    .header{
+        padding: 5px;
+        &__title{
+            font-size: 3rem;
+        }
+        img{
+            width: 80px; 
+        }
+    }
+    .links{
+        font-size: 1.2rem;
+    }
+    .hero{
+        &__text{
+            padding: 20px;
+            font-size: 1.4rem;
+        }
+        &__button{
+            width: 250px;
+            font-size: 1.4rem;
+        }
+    }
+
+
+    .porque{
+        &__text{
+            font-size: 1.1rem;
+        }
+        &__title{
+            font-size: 1.2rem;
+        }
+        &__button{
+            font-size: 0.9rem;
+            width: 230px;
+        }
+    }
+    .destinos{
+        padding: 15px;
+        &__title{
+            font-size: 1.8rem;
+        }
+        &__tarjeta{
+            font-size: 0.9rem;
+            img{
+                width: 90px;
+            }
+        }
+        &__button{
+            font-size: 1rem;
+            width: 230px;
+        }
+        h3{
+            font-size: 1rem;
+        }
+    }
+    .redes{
+        &__title{
+            font-size: 1.7rem;
+        }
+        &__logos{
+            font-size: 1.3rem;
+        }
+    }
+    .footer{
+        img{
+            width: 85px;
+        }
+        &__text{
+            font-size: 1rem;
+        }
+    }
+
+    .destinos-dos{
+        &__title{
+            font-size: $tamano-titulo-lg;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        &__button{
+            margin-top: 80px;
+            margin-bottom: 60px;
+            font-size: 2rem;
+            width: 450px;
+        }
+    }
+    .espana p{
+        margin-top: 40px;
+    }
+    .inglaterra p{
+        margin-top: 40px;
+    }
+    .portugal p{
+        margin-top: 40px;
+    }
+    .suecia p{
+        margin-top: 30px;
+    }
+
+    .experiencias{
+        &__title{
+            font-size: $tamano-titulo-lg;
+        }
+        &__button{
+            font-size: 2rem;
+            width: 450px;
+        }
+    }
+
+    .main-precios{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+    .precios{
+        gap:30px;
+        &__table{
+            width: 75%;
+            height: 50vh;
+        }
+        &__title{
+            font-size: $tamano-titulo-lg;
+        }
+        &__button{
+            font-size: 1.2rem;
+            width: 220px;
+        }
+    }
+    .preguntas{
+        border: solid rgba(0, 0, 0, 0.445) 2px;
+        &__title{
+            font-size: 2.2rem;
+        }
+        h3{
+            font-size: 0.9rem;
+        }
+    }
+
+    .formulario{
+        font-size: 1.1rem;
+        padding: 10px;
+        &__title{
+            font-size: $tamano-titulo-lg;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .somos{
+        &__title{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .sociales{
+        &__title{
+            font-size: 2rem;
+        }
+        &__caja{
+            font-size: 1.2rem;
+        }
+    }
+}
