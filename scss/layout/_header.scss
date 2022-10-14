@@ -4,11 +4,15 @@
 }
 .links{
     color: rgb(65, 5, 5);
-    font-family: 'Permanent Marker', sans-serif;
-    font-size: 0.8rem;
+    font-family: $fuente-texto;
+    font-size: 0.9rem;
+    transition-duration: 0.5s;
+    &:hover{
+        color: $color-principal;
+    }
 }
 .header{
-    background-color: rgba(42, 144, 185, 0.699);
+    background-color: $color-cajas;
     width: 100%;
     @include flex-column();
     img{
@@ -20,8 +24,8 @@
     }
     &__title{
         color: $color-principal;
-        font-size: 1.8rem;
-        font-family: 'Pacifico', sans-serif;
+        font-size: 1.9rem;
+        font-family: $fuente-titulo;
     }
     &__nav{
         display: flex;

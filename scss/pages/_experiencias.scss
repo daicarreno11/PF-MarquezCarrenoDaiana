@@ -4,14 +4,14 @@
     margin-bottom: 50px;
     &__title{
         text-align: center;
-        font-family: 'Pacifico', sans-serif;
+        font-family: $fuente-titulo;
         color: $color-principal;
         font-size: $tamano-titulo;
         margin-bottom: 30px;
     }
     &__caja{
         border-radius: 60px;
-        background-color: rgba(153, 146, 146, 0.24);
+        background-color: rgba(142, 133, 196, 0.836);
         margin-bottom: 30px;
     }
     img{
@@ -19,34 +19,39 @@
     }
     h3{
         text-align: center;
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-titulo;
         color: $color-texto;
     }
     p{
         text-align: justify;
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-texto;
         color: $color-texto;
     }
     &__enlace{
         text-align: center;
-        color: rgb(240, 100, 6);
-        font-family: 'Permanent Marker', sans-serif;
+        color: $color-principal;
+        font-family: $fuente-texto;
+        font-size: 1rem;
+        &:hover{
+            color: $color-principal;
+        }
     }
     &__button{
         margin-left: auto;
         margin-right: auto;
+        margin-top: 70px;
         padding: 5px;
-        color: rgb(228, 106, 25);
-        font-family: 'Permanent Marker', sans-serif;
+        color: $color-texto;
+        font-family: $fuente-texto;
         text-align: center;
         font-size: 1rem;
-        background-color: rgba(219, 216, 230, 0.973);
+        background-color: rgba(142, 133, 196, 0.836);
         width: 250px;
         border-radius: 20px;
         transition-duration: 2s;
         &:hover{
-            background-color: rgb(117, 233, 8);
-            transform: scale(1.2);
+            color: $color-texto;
+            transform: scale(1.1);
         }
     }
 }

@@ -5,13 +5,13 @@
     align-items: center;
     margin: 10px;
     &__title{
-        font-family: 'Pacifico', sans-serif;
+        font-family: $fuente-titulo;
         color: $color-principal;
         font-size: 1.4rem;
     }
     p{
-        font-family: 'Permanent Marker', sans-serif;
-        font-size: 0.8rem;
+        font-family: $fuente-texto;
+        font-size: 0.9rem;
         text-align: justify;
         padding: 10px;
     }
@@ -24,13 +24,12 @@
         flex-direction: row;
         justify-content: space-around;
         font-size: 1rem;
-    }
-    i{
-        font-family: 'Pacifico', sans-serif;
+        color: $color-texto;
+        font-family: $fuente-texto;
     }
     &__title{
         text-align: center;
-        font-family: 'Pacifico', sans-serif;
+        font-family: $fuente-titulo;
         color: $color-principal;
         font-size: 1.4rem;
     }

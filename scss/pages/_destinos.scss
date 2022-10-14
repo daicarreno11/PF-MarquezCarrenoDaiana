@@ -6,23 +6,23 @@
         margin-bottom: 20px;
         text-align: center;
         font-size: $tamano-titulo;
-        font-family: 'Pacifico', sans-serif;
+        font-family: $fuente-titulo;
         color: $color-principal;
     }
     h3{
-        background-color: rgba(245, 245, 220, 0.349);
+        background-color: rgba(245, 245, 220, 0.637);
         color: $color-texto;
         text-align: center;
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-titulo;
         border-radius: 50px;
     }
     p{
-        background-color: rgba(142, 133, 196, 0.836);
+        background-color: $color-cajas;
         margin: 15px;
         padding: 15px;
         color: $color-texto;
         text-align: center;
-        font-family: 'Pacifico', sans-serif;
+        font-family: $fuente-texto;
         border-radius: 10px;
     }
     &__button{
@@ -30,17 +30,17 @@
         margin-right: auto;
         margin-top: 30px;
         padding: 5px;
-        color: rgb(40, 24, 148);
-        font-family: 'Permanent Marker', sans-serif;
+        color: $color-texto;
+        font-family: $fuente-texto;
         text-align: center;
         font-size: 1rem;
-        background-color: rgba(219, 216, 230, 0.973);
+        background-color: $color-cajas;
         width: 250px;
         border-radius: 20px;
         transition-duration: 2s;
         &:hover{
-            background-color: rgb(135, 194, 25);
-            transform: scale(1.2);
+            color: $color-texto;
+            transform: scale(1.1);
         }
     }
 }

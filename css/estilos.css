@@ -54,12 +54,16 @@ img {
 
 .links {
   color: rgb(65, 5, 5);
-  font-family: "Permanent Marker", sans-serif;
-  font-size: 0.8rem;
+  font-family: "Merriweather", sans-serif;
+  font-size: 0.9rem;
+  transition-duration: 0.5s;
+}
+.links:hover {
+  color: rgb(230, 13, 42);
 }
 
 .header {
-  background-color: rgba(42, 144, 185, 0.699);
+  background-color: rgba(142, 133, 196, 0.836);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -76,7 +80,7 @@ img {
 }
 .header__title {
   color: rgb(230, 13, 42);
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-family: "Pacifico", sans-serif;
 }
 .header__nav {
@@ -89,7 +93,7 @@ img {
 /* FOOTER */
 .footer {
   background-color: rgb(230, 13, 42);
-  margin-top: 10px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -102,7 +106,7 @@ img {
   font-size: 0.9rem;
 }
 .footer__text {
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 0.7rem;
   text-align: center;
   color: rgb(7, 1, 1);
@@ -118,13 +122,13 @@ img {
 .formulario {
   grid-area: formulario;
   margin-top: 20px;
-  font-family: "Permanent Marker", sans-serif;
-  font-size: 0.8rem;
+  font-family: "Merriweather", sans-serif;
+  font-size: 0.9rem;
   padding: 5px;
 }
 .formulario p {
   margin-bottom: 15px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .formulario__title {
   text-align: center;
@@ -137,21 +141,30 @@ img {
   flex-direction: column;
   gap: 10px;
 }
+.formulario__cajita {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.formulario__input {
+  border: solid rgb(7, 1, 1) 2px;
+  border-radius: 3px;
+  padding: 3px;
+}
 .formulario__button {
   text-align: center;
   padding: 5px;
   color: rgb(17, 16, 16);
-  font-family: "Permanent Marker", sans-serif;
-  font-size: 0.7rem;
-  background-color: rgba(219, 216, 230, 0.973);
+  font-family: "Merriweather", sans-serif;
+  font-size: 0.8rem;
+  background-color: rgba(142, 133, 196, 0.836);
   width: 120px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .birds {
-  background-image: url(../img/cloudsdos.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(171, 172, 230, 0.644);
 }
 
 /* HERO */
@@ -170,27 +183,27 @@ img {
   border-radius: 20px;
   margin-top: 60px;
   padding: 10px;
-  background-color: rgba(21, 203, 216, 0.377);
+  background-color: rgba(144, 133, 196, 0.548);
   text-align: center;
-  font-family: "Permanent Marker", sans-serif;
-  color: rgb(131, 7, 7);
-  font-size: 0.8rem;
+  font-family: "Merriweather", sans-serif;
+  color: rgb(7, 1, 1);
+  font-size: 1rem;
 }
 .hero__button {
   margin-top: 20px;
   width: 150px;
   border-radius: 20px;
-  background-color: rgba(219, 216, 230, 0.788);
+  background-color: rgba(142, 133, 196, 0.836);
+  color: rgb(7, 1, 1);
   padding: 5px;
   text-align: center;
-  font-family: "Permanent Marker", sans-serif;
-  color: rgb(138, 18, 102);
+  font-family: "Merriweather", sans-serif;
   font-size: 0.8rem;
   transition-duration: 2s;
 }
 .hero__button:hover {
-  background-color: rgb(135, 194, 25);
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 /*SECTION DESTINOS MAIN */
@@ -204,7 +217,7 @@ img {
 }
 .destinos__title {
   text-align: center;
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Merriweather", sans-serif;
   color: rgb(230, 13, 42);
   font-size: 1.3rem;
 }
@@ -220,7 +233,7 @@ img {
   justify-content: center;
   align-items: center;
   color: rgb(7, 1, 1);
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Merriweather", sans-serif;
 }
 .destinos__tarjeta img {
   width: 50px;
@@ -232,17 +245,16 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
-  color: rgb(243, 12, 12);
-  font-family: "Permanent Marker", sans-serif;
+  color: rgb(7, 1, 1);
+  font-family: "Merriweather", sans-serif;
   text-align: center;
-  font-size: 0.6rem;
-  background-color: rgba(219, 216, 230, 0.973);
-  width: 140px;
+  font-size: 0.8rem;
+  background-color: rgba(142, 133, 196, 0.836);
+  width: 200px;
   border-radius: 20px;
   transition-duration: 2s;
 }
 .destinos__button:hover {
-  background-color: rgb(135, 194, 25);
   transform: scale(1.2);
 }
 
@@ -252,39 +264,38 @@ img {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  background-color: rgba(250, 235, 215, 0.253);
+  background-color: rgba(250, 235, 215, 0.568);
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 .porque__title {
   text-align: center;
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Merriweather", sans-serif;
   color: rgb(230, 13, 42);
   font-size: 1.1rem;
 }
 .porque__text {
   text-align: center;
   line-height: 1.5;
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Merriweather", sans-serif;
   color: rgb(7, 1, 1);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 .porque__button {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
-  color: rgb(243, 12, 12);
-  font-family: "Permanent Marker", sans-serif;
+  color: rgb(7, 1, 1);
+  font-family: "Merriweather", sans-serif;
   text-align: center;
   font-size: 0.8rem;
-  background-color: rgba(219, 216, 230, 0.973);
-  width: 200px;
+  background-color: rgba(142, 133, 196, 0.836);
+  width: 230px;
   border-radius: 20px;
   transition-duration: 2s;
 }
 .porque__button:hover {
-  background-color: rgb(135, 194, 25);
   transform: scale(1.2);
 }
 
@@ -300,7 +311,7 @@ img {
   animation: slide-in-left 4s ease;
 }
 .redes__title {
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Merriweather", sans-serif;
   color: rgb(230, 13, 42);
   font-size: 1.3rem;
 }
@@ -308,7 +319,7 @@ img {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Merriweather", sans-serif;
   color: rgb(7, 1, 1);
   font-size: 0.8rem;
 }
@@ -325,10 +336,10 @@ img {
   color: rgb(230, 13, 42);
 }
 .destinos-dos h3 {
-  background-color: rgba(245, 245, 220, 0.349);
+  background-color: rgba(245, 245, 220, 0.637);
   color: rgb(7, 1, 1);
   text-align: center;
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Pacifico", sans-serif;
   border-radius: 50px;
 }
 .destinos-dos p {
@@ -337,7 +348,7 @@ img {
   padding: 15px;
   color: rgb(7, 1, 1);
   text-align: center;
-  font-family: "Pacifico", sans-serif;
+  font-family: "Merriweather", sans-serif;
   border-radius: 10px;
 }
 .destinos-dos__button {
@@ -345,18 +356,18 @@ img {
   margin-right: auto;
   margin-top: 30px;
   padding: 5px;
-  color: rgb(40, 24, 148);
-  font-family: "Permanent Marker", sans-serif;
+  color: rgb(7, 1, 1);
+  font-family: "Merriweather", sans-serif;
   text-align: center;
   font-size: 1rem;
-  background-color: rgba(219, 216, 230, 0.973);
+  background-color: rgba(142, 133, 196, 0.836);
   width: 250px;
   border-radius: 20px;
   transition-duration: 2s;
 }
 .destinos-dos__button:hover {
-  background-color: rgb(135, 194, 25);
-  transform: scale(1.2);
+  color: rgb(7, 1, 1);
+  transform: scale(1.1);
 }
 
 .francia {
@@ -469,7 +480,7 @@ img {
 }
 .experiencias__caja {
   border-radius: 60px;
-  background-color: rgba(153, 146, 146, 0.24);
+  background-color: rgba(142, 133, 196, 0.836);
   margin-bottom: 30px;
 }
 .experiencias img {
@@ -477,35 +488,40 @@ img {
 }
 .experiencias h3 {
   text-align: center;
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Pacifico", sans-serif;
   color: rgb(7, 1, 1);
 }
 .experiencias p {
   text-align: justify;
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Merriweather", sans-serif;
   color: rgb(7, 1, 1);
 }
 .experiencias__enlace {
   text-align: center;
-  color: rgb(240, 100, 6);
-  font-family: "Permanent Marker", sans-serif;
+  color: rgb(230, 13, 42);
+  font-family: "Merriweather", sans-serif;
+  font-size: 1rem;
+}
+.experiencias__enlace:hover {
+  color: rgb(230, 13, 42);
 }
 .experiencias__button {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 70px;
   padding: 5px;
-  color: rgb(228, 106, 25);
-  font-family: "Permanent Marker", sans-serif;
+  color: rgb(7, 1, 1);
+  font-family: "Merriweather", sans-serif;
   text-align: center;
   font-size: 1rem;
-  background-color: rgba(219, 216, 230, 0.973);
+  background-color: rgba(142, 133, 196, 0.836);
   width: 250px;
   border-radius: 20px;
   transition-duration: 2s;
 }
 .experiencias__button:hover {
-  background-color: rgb(117, 233, 8);
-  transform: scale(1.2);
+  color: rgb(7, 1, 1);
+  transform: scale(1.1);
 }
 
 /* TABLA PRECIOS */
@@ -517,16 +533,16 @@ img {
   margin: 10px;
 }
 .precios__table {
-  font-family: "Permanent Marker", sans-serif;
-  font-size: 0.8rem;
+  font-family: "Merriweather", sans-serif;
+  font-size: 0.9rem;
   color: rgb(7, 1, 1);
   width: 90vw;
   border: 5px solid black;
-  padding: 2px;
+  padding: 1px;
   border-radius: 10px;
   /* Gradiente */
   background: rgb(33, 187, 193);
-  background: linear-gradient(to top, rgb(33, 187, 193) 9%, rgb(18, 33, 230) 21%, rgb(37, 20, 136) 34%, rgb(16, 10, 97) 48%, rgb(25, 86, 170) 60%, rgb(30, 132, 213) 72%, rgb(9, 78, 187) 82%, rgb(29, 9, 187) 91%);
+  background: linear-gradient(to top, rgb(219, 198, 228) 9%, rgb(166, 151, 175) 21%, rgb(146, 130, 153) 34%, rgb(198, 186, 209) 48%, rgb(174, 153, 194) 60%, rgb(161, 152, 177) 72%, rgb(207, 186, 224) 82%, rgb(196, 173, 214) 91%);
 }
 .precios__title {
   text-align: center;
@@ -536,17 +552,17 @@ img {
 }
 .precios__button {
   padding: 5px;
-  color: rgb(243, 12, 12);
-  font-family: "Permanent Marker", sans-serif;
+  color: rgb(7, 1, 1);
+  font-family: "Merriweather", sans-serif;
   text-align: center;
-  font-size: 0.7rem;
-  background-color: rgba(219, 216, 230, 0.973);
-  width: 120px;
+  font-size: 0.9rem;
+  background-color: rgba(142, 133, 196, 0.836);
+  width: 150px;
   border-radius: 20px;
   transition-duration: 2s;
 }
 .precios__button:hover {
-  background-color: rgb(135, 194, 25);
+  color: rgb(7, 1, 1);
   transform: scale(1.2);
 }
 
@@ -559,7 +575,7 @@ img {
   margin-top: 30px;
 }
 .preguntas__caja {
-  font-family: "Permanent Marker", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-size: 0.8rem;
   display: flex;
   flex-direction: column;
@@ -570,7 +586,7 @@ img {
 }
 .preguntas__contenedor {
   width: 90%;
-  background-color: rgba(178, 174, 216, 0.329);
+  background-color: rgba(142, 133, 196, 0.836);
   border-radius: 10px;
   padding: 5px;
 }
@@ -581,11 +597,11 @@ img {
 }
 .preguntas h3 {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .preguntas p {
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 /* QUIENES SOMOS */
@@ -602,8 +618,8 @@ img {
   font-size: 1.4rem;
 }
 .somos p {
-  font-family: "Permanent Marker", sans-serif;
-  font-size: 0.8rem;
+  font-family: "Merriweather", sans-serif;
+  font-size: 0.9rem;
   text-align: justify;
   padding: 10px;
 }
@@ -617,9 +633,8 @@ img {
   flex-direction: row;
   justify-content: space-around;
   font-size: 1rem;
-}
-.sociales i {
-  font-family: "Pacifico", sans-serif;
+  color: rgb(7, 1, 1);
+  font-family: "Merriweather", sans-serif;
 }
 .sociales__title {
   text-align: center;
@@ -682,8 +697,8 @@ img {
     width: 70px;
   }
   .destinos__button {
-    font-size: 0.8rem;
-    width: 180px;
+    font-size: 0.9rem;
+    width: 200px;
   }
   .destinos h3 {
     font-size: 0.8rem;
@@ -721,16 +736,21 @@ img {
     font-size: 1.5;
     width: 300px;
   }
+  .experiencias__enlace {
+    font-size: 1.1rem;
+  }
   .precios__table {
     width: 80vw;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding: 3px;
     height: 40vh;
   }
   .precios__title {
     font-size: 2.5rem;
   }
   .precios__button {
-    font-size: 0.9rem;
+    margin-top: 10px;
+    font-size: 1.1rem;
     width: 180px;
   }
   .preguntas__title {
@@ -745,10 +765,10 @@ img {
     gap: 15px;
   }
   .preguntas h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .preguntas p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .main-contacto {
     display: grid;
@@ -759,23 +779,33 @@ img {
     padding: 5px;
   }
   .formulario {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .formulario__title {
     font-size: tamano-titulo-md;
   }
   .formulario p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .formulario__button {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .formulario__cajita {
+    width: 60%;
   }
   .somos {
-    background-color: rgba(178, 174, 216, 0.493);
+    background-color: rgba(142, 133, 196, 0.836);
     border-radius: 20px;
   }
   .somos__title {
     font-size: 1.6rem;
   }
+  .somos p {
+    font-size: 1rem;
+  }
   .sociales {
-    background-color: rgba(178, 174, 216, 0.493);
+    background-color: rgba(142, 133, 196, 0.836);
     border-radius: 80px;
   }
   .sociales__title {
@@ -785,7 +815,7 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 1200px) {
@@ -816,8 +846,8 @@ img {
     font-size: 1.2rem;
   }
   .porque__button {
-    font-size: 0.9rem;
-    width: 230px;
+    font-size: 1rem;
+    width: 250px;
   }
   .destinos {
     padding: 15px;
@@ -832,8 +862,8 @@ img {
     width: 90px;
   }
   .destinos__button {
-    font-size: 1rem;
-    width: 230px;
+    font-size: 1.2rem;
+    width: 250px;
   }
   .destinos h3 {
     font-size: 1rem;
@@ -842,7 +872,7 @@ img {
     font-size: 1.7rem;
   }
   .redes__logos {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .footer img {
     width: 85px;
@@ -883,6 +913,9 @@ img {
     font-size: 2rem;
     width: 450px;
   }
+  .experiencias__enlace {
+    font-size: 1.2rem;
+  }
   .main-precios {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -895,6 +928,7 @@ img {
   .precios__table {
     width: 75%;
     height: 50vh;
+    font-size: 1.2rem;
   }
   .precios__title {
     font-size: 3.5rem;
@@ -909,30 +943,33 @@ img {
   .preguntas__title {
     font-size: 2.2rem;
   }
-  .preguntas h3 {
-    font-size: 0.9rem;
-  }
   .formulario {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 10px;
   }
   .formulario__title {
     font-size: 3.5rem;
   }
   .formulario p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+  .formulario__button {
+    font-size: 1.2rem;
+  }
+  .formulario__cajita {
+    width: 30%;
   }
   .somos__title {
     font-size: 2rem;
   }
   .somos p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .sociales__title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   .sociales__caja {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 

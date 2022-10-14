@@ -12,29 +12,30 @@
         border-radius: 20px;
         margin-top: 60px;
         padding: 10px;
-        background-color: rgba(21, 203, 216, 0.377);
+        background-color: rgba(144, 133, 196, 0.548);
         text-align: center;
-        font-family: 'Permanent Marker', sans-serif;
-        color: $color-secundario;
-        font-size: 0.8rem;
+        font-family: $fuente-texto;
+        color: $color-texto;
+        font-size: 1rem;
     }
     &__button{
         margin-top: 20px;
         width: 150px;
         border-radius: 20px;
-        background-color: rgba(219, 216, 230, 0.788);
+        background-color: $color-cajas;
+        color: $color-texto;
         padding: 5px;
         text-align: center;
-        font-family: 'Permanent Marker', sans-serif;
-        color: rgb(138, 18, 102);
+        font-family: $fuente-texto; 
         font-size: 0.8rem;
         transition-duration: 2s;
         &:hover{
-            background-color: rgb(135, 194, 25);
             transform: scale(1.1);
+            cursor: pointer;
         }
     }
 }
+
 
 /*SECTION DESTINOS MAIN */
 .destinos{
@@ -45,7 +46,7 @@
     margin-top: 15px;
     &__title{
         text-align: center;
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-texto;
         color: $color-principal;
         font-size: 1.3rem;
     }
@@ -58,7 +59,7 @@
     &__tarjeta{
         @include flexbox(column, center, center);
         color: $color-texto;
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-texto;
         img{
             width: 50px;
         }
@@ -70,16 +71,15 @@
         margin-left: auto;
         margin-right: auto;
         padding: 5px;
-        color: rgb(243, 12, 12);
-        font-family: 'Permanent Marker', sans-serif;
+        color: $color-texto;
+        font-family: $fuente-texto;
         text-align: center;
-        font-size: 0.6rem;
-        background-color: rgba(219, 216, 230, 0.973);
-        width: 140px;
+        font-size: 0.8rem;
+        background-color: $color-cajas;
+        width: 200px;
         border-radius: 20px;
         transition-duration: 2s;
         &:hover{
-            background-color: rgb(135, 194, 25);
             transform: scale(1.2);
         }
     }
@@ -90,36 +90,35 @@
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgba(250, 235, 215, 0.253);
+    background-color: rgba(250, 235, 215, 0.568);
     @include flex-column();
     gap: 10px;
     &__title{
         text-align: center;
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-texto;
         color: rgb(230, 13, 42);
         font-size: 1.1rem;
     }
     &__text{
         text-align: center;
         line-height: 1.5;
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-texto;
         color: $color-texto;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
     &__button{
         margin-left: auto;
         margin-right: auto;
         padding: 5px;
-        color: rgb(243, 12, 12);
-        font-family: 'Permanent Marker', sans-serif;
+        color: $color-texto;
+        font-family: $fuente-texto;
         text-align: center;
         font-size: 0.8rem;
-        background-color: rgba(219, 216, 230, 0.973);
-        width: 200px;
+        background-color: $color-cajas;
+        width: 230px;
         border-radius: 20px;
         transition-duration: 2s;
         &:hover{
-            background-color: rgb(135, 194, 25);
             transform: scale(1.2);
         }
     }
@@ -132,7 +131,7 @@
     @include flexbox(column, center, center);
     animation: slide-in-left 4s ease;
     &__title{
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-texto;
         color: $color-principal;
         font-size: 1.3rem;
     }
@@ -140,8 +139,9 @@
         display: flex;
         flex-direction: row;
         gap: 40px;
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-texto;
         color: $color-texto;
         font-size: 0.8rem;
     }
 }
+

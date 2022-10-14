@@ -2,7 +2,7 @@
 
 .footer{
     background-color: $color-principal;
-    margin-top: 10px;
+    margin-top: 50px;
     @include flex-column();
     gap: 15px;
     img{
@@ -13,7 +13,7 @@
         font-size: 0.9rem;
     }
     &__text{
-        font-family: 'Permanent Marker', sans-serif;
+        font-family: $fuente-texto;
         font-size: 0.7rem;
         text-align: center;
         color: $color-texto;
